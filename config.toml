@@ -1,0 +1,31 @@
+# The URL the site will be built for
+base_url = "https://github.io/dicom-rs"
+
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = false
+
+theme = "juice"
+
+[markdown]
+# Whether to do syntax highlighting
+# Theme can be customised by setting the `highlight_theme` variable to a theme supported by Zola
+highlight_code = true
+highlight_theme = "css"
+
+highlight_themes_css = [
+  { theme = "base16-ocean-dark", filename = "syntax-theme-dark.css" },
+  { theme = "base16-ocean-light", filename = "syntax-theme-light.css" },
+]
+
+[extra]
+# Put all your custom variables here
+
+logo_name = "DICOM-rs"
+logo_path = "./dicom-rs-logo.svg"
+juice_extra_menu = [
+    { title = "Github", link = "https://github.com/Enet4/dicom-rs"}
+]
+repository_url = "https://github.com/Enet4/dicom-rs"

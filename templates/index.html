@@ -1,0 +1,54 @@
+{% extends "juice/templates/index.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/style.css">
+{% endblock head %}
+
+{% block hero %}
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<section class="text-center">
+    <h1 class="heading-text" style="font-size: 50px">
+        Enter DICOM-rs
+    </h1>
+    <h3 class="title-text">
+        A DICOM implementation for the next generation of medical imaging systems.
+    </h3>
+    <div>
+        <a class="github-button" href="{{config.extra.repository_url}}" data-size="large" data-show-count="true"
+           aria-label="Star dicom-rs on GitHub">Star</a>
+        <a class="github-button" href="{{config.extra.repository_url}}/fork" data-size="large"
+           data-show-count="true" aria-label="Fork dicom-rs on GitHub">Fork</a>
+
+    </div>
+</section>
+<!-- 
+<img class="hero-image" style="width: 50%" src="{{ get_url(path="juice.svg") }}">
+-->
+
+<div class="explore-more text"
+    onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+    Find out more ⇩
+</div>
+<style>
+    .hero section {
+        padding: 0 4rem;
+    }
+    @media screen and (max-width: 768px) {
+        .hero section {
+            padding: 0 2rem;
+        }
+
+        .hero-image {
+            display: none
+        }
+    }
+</style>
+{% endblock hero %}
+
+{% block footer %}
+<footer>
+    <small class="subtext">
+        <a href="{{config.extra.repository_url}}">DICOM-rs</a> 
+    </small>
+</footer>
+{% endblock footer %}
