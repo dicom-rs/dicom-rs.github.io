@@ -1,0 +1,37 @@
+on:
+  push:
+    branches:
+     - main
+name: Build and deploy to GitHub Pages on push
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions-rust-lang/setup-rust-toolchain@v1
+      with:
+        toolchain: stable
+        target: wasm32-unknown-unknown
+        cache: true
+     - name: Cache wasm-bindgen
+        id: cache-wasm-bindgen
+        uses: actions/cache@v3
+        env:
+          cache-name: cache-wasm-bindgen
+        with:
+          path: ~/.cargo/.bin
+          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('*') }}
+          restore-keys: |
+            ${{ runner.os }}-build-${{ env.cache-name }}-
+            ${{ runner.os }}-build-
+            ${{ runner.os }}-
+    - if: ${{ steps.cache-wasm-bindgen.outputs.cache-hit != 'true' }}
+      name: install wasm-bindgen CLI
+      run: cargo install wasm-bindgen-cli
+    - name: Build embedded DICOM dump webapp
+      run: cd rust/dicom-dump-js && ./build-wasm-release.sh
+    - name: deploy Zola site
+      uses: shalzz/zola-deploy-action@v0.16.1
+      env:
+        PAGES_BRANCH: gh-pages
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

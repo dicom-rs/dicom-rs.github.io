@@ -6,19 +6,24 @@
 
 {% block hero %}
 <script async defer src="https://buttons.github.io/buttons.js"></script>
-<section class="text-center">
-    <h1 class="heading-text" style="font-size: 50px">
-        Enter DICOM-rs
-    </h1>
-    <h3 class="title-text">
-        A DICOM implementation for the next generation of medical imaging systems.
-    </h3>
-    <div>
-        <a class="github-button" href="{{config.extra.repository_url}}" data-size="large" data-show-count="true"
-           aria-label="Star dicom-rs on GitHub">Star</a>
-        <a class="github-button" href="{{config.extra.repository_url}}/fork" data-size="large"
-           data-show-count="true" aria-label="Fork dicom-rs on GitHub">Fork</a>
+<section class="text-center" style="display: flex;">
+    <div style="position: absolute; width: 128px">
+        <img src="dicom-rs-logo.svg" style="width: 100%; opacity: 33%;"></img>
+    </div>
+    <div style="width: 100%">
+        <h1 class="heading-text" style="font-size: 50px">
+            Enter DICOM-rs
+        </h1>
+        <h3 class="title-text">
+            A DICOM implementation for the next generation of medical imaging systems.
+        </h3>
+        <div>
+            <a class="github-button" href="{{config.extra.repository_url}}" data-size="large" data-show-count="true"
+            aria-label="Star dicom-rs on GitHub">Star</a>
+            <a class="github-button" href="{{config.extra.repository_url}}/fork" data-size="large"
+            data-show-count="true" aria-label="Fork dicom-rs on GitHub">Fork</a>
 
+        </div>
     </div>
 </section>
 <!-- 
@@ -45,10 +50,17 @@
 </style>
 {% endblock hero %}
 
+{% block content %}
+{{ section.content | safe }}
+{% endblock content %}
+
 {% block footer %}
 <footer>
     <small class="subtext">
-        <a href="{{config.extra.repository_url}}">DICOM-rs</a> 
+        2023 <a href="{{config.extra.repository_url}}">DICOM-rs project</a>
+        <p>
+            Published with <a href="https://pages.github.com">GitHub Pages</a>
+        </p>
     </small>
 </footer>
 {% endblock footer %}
