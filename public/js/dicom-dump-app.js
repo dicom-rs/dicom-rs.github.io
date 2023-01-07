@@ -24,8 +24,8 @@ function init() {
     const lbl2 = document.createElement('span');
     lbl2.innerHTML = `
     <p><em>
-        Don't worry, the file will not leave your computer.
-        See the website's source code <a href=\"https://github.com/dicom-rs/website\">here</a>.
+        Don't worry, the file stays on your computer.
+        See the source code <a href=\"https://github.com/dicom-rs/website/tree/main/rust/dicom-dump-js\">here</a>.
     </em></p>
     `;
 
