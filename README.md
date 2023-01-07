@@ -12,5 +12,4 @@ zola serve
 Last tested using zola 0.16.1.
 
 To build the sample web application,
-navigate to [`rust/dicom-dump-js`](rust/dicom-dump-js)
-and run `build-wasm-release.sh`.
+see [`rust/dicom-dump-js`](rust/dicom-dump-js).
