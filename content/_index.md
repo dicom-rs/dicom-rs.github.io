@@ -104,10 +104,12 @@ enabling its use in academia and professional software.
 - Follow the development process
   and report issues
   in the official [GitHub repository].
+  Open [discussion] topics here as well.
 - For real time chatting about DICOM-rs,
   see the [DICOM-rs Zulip].
 - Check also the community [Code of Conduct].
 
 [GitHub repository]: https://github.com/Enet4/dicom-rs
+[Discussion]: https://github.com/Enet4/dicom-rs/discussions
 [DICOM-rs Zulip]: https://dicom-rs.zulipchat.com
 [Code of Conduct]: https://github.com/Enet4/dicom-rs/blob/master/CODE_OF_CONDUCT.md
