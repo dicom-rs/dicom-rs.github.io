@@ -19,3 +19,9 @@ features = ["derive"]
 [dependencies.wasm-bindgen]
 version = "0.2.83"
 features = ["serde", "serde_json"]
+
+[profile.release]
+opt-level = 's'
+lto = 'fat'
+codegen-units = 1
+
