@@ -63,6 +63,16 @@ h3 {
     font-family: monospace;
 }
 
+.keypoints {
+    ul {
+        padding-inline-start: 1em;
+    }
+    li {
+        list-style: '▶ ';
+        padding: 0.5rem 1em;
+    }
+}
+
 /* crates, rolling */
 div.crates {
     overflow-x: auto;

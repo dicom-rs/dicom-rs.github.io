@@ -9,11 +9,15 @@ weight = 9999
 **DICOM-rs** is an ecosystem of libraries and tools
 for working with DICOM systems.
 
-- Built in the [Rust programming language][rust] for performance and reliability.
+<div class="keypoints">
+
 - Work with DICOM meta-data and pixel data with ease.
 - Communicate with existing DICOM systems.
+- Built in the [Rust programming language][rust] for performance and reliability.
 - Portable and prepared for all modern environments.
 - Free to use and extend, for life.
+
+</div>
 
 [rust]: https://rust-lang.org
 
