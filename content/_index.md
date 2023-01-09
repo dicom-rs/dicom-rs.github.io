@@ -113,7 +113,7 @@ enabling its use in academia and professional software.
   and open [discussion].
 - For real time chatting about DICOM-rs,
   see the [DICOM-rs Zulip].
-- Check also the community [Code of Conduct].
+- All interactions must abide to the community [Code of Conduct].
 
 [GitHub repository]: https://github.com/Enet4/dicom-rs
 [discussion]: https://github.com/Enet4/dicom-rs/discussions
