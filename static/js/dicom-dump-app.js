@@ -9,6 +9,9 @@ let fileinput = null;
 /** @type {HTMLTableElement | null} */
 let dumpTable = null;
 
+/** @type {HTMLSpanElement | null} */
+let errorSpan = null;
+
 function init() {
     container.innerHTML = '';
     fileinput = document.createElement('input');
@@ -53,6 +56,17 @@ async function handleFiles() {
         updateTableWith(dump);
     } catch (e) {
         console.error(`Failed to open ${this.value} as a DICOM file:`, e);
+
+        if (dumpTable) {
+            dumpTable.remove();
+            dumpTable = null;
+        }
+        if (!errorSpan) {
+            errorSpan = document.createElement('span');
+            errorSpan.classList.add('error');
+        }
+        errorSpan.innerText = `Error: ${e.message} (is this a valid DICOM file?)`;
+        container.appendChild(errorSpan);
     }
 }
 
@@ -61,6 +75,12 @@ async function handleFiles() {
  */
 function updateTableWith(dump) {
     let attach = false;
+
+    if (errorSpan) {
+        errorSpan.remove();
+        errorSpan = null;
+    }
+
     if (!dumpTable) {
         dumpTable = document.createElement('table');
         let headRow = document.createElement('thead');
