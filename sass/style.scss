@@ -1,21 +1,12 @@
 @import url("syntax-theme-dark.css") (prefers-color-scheme: dark);
 @import url("syntax-theme-light.css") (prefers-color-scheme: light);
 
-* {
-    --color-bgk-1: #b0b4b8;
-    --color-bgk-2: #e4e4e7;
-    --color-bgk-code: #e2e2e2;
-
-    --color-1: rgb(51, 64, 80);
+.toc-sticky {
+    background-color: var(--color-bgk-2);
 }
 
-@media (prefers-color-scheme: dark) {
-    * {
-        --color-bgk-1: rgb(51, 64, 80);
-        --color-bgk-code: #4a4a4a;
-    
-        --color-1: #989898;
-    }
+h1.hero.headingtext {
+    color: #4a4a4a;
 }
 
 .hero {
@@ -39,6 +30,9 @@ https://www.joshwcomeau.com/gradient-generator?colors=7a6cfc|dac3fa|dea584&angle
 
     h1, h2, h3 {
         border-left: unset;
+    }
+    h1, h2, h3, div {
+        color: #111;
     }
 }
 
@@ -91,7 +85,7 @@ div.crates {
         font-size: 0.8em;
         font-weight: 600;
         background-color: burlywood;
-        color: var(--color-1);
+        color: #4a4a4a;
         text-align: center;
         list-style: none;
         display: inline-block;
@@ -207,18 +201,38 @@ div#dicom-dump-container {
             }
         }
     }
+
+    @media (prefers-color-scheme: dark) {
+        background: linear-gradient(
+            300deg,
+            #5b4830,
+            #1f1f1f
+        );
+    }
 }
 
 /* Community bullet points */
 #community + ul {
-    :nth-child(1) {
+    li:nth-child(1) {
         list-style: url('mark-github-16.svg');
     }
-    :nth-child(2) {
+    li:nth-child(2) {
         list-style: url('zulip.svg');
     }
-    :nth-child(3) {
+    li:nth-child(3) {
         list-style: url('code-of-conduct-16.svg');
+    }
+
+    @media (prefers-color-scheme: dark) {
+        li:nth-child(1) {
+            list-style: url('mark-github-16-w.svg');
+        }
+        li:nth-child(2) {
+            list-style: url('zulip-w.svg');
+        }
+        li:nth-child(3) {
+            list-style: url('code-of-conduct-16-w.svg');
+        }
     }
 }
 
@@ -226,5 +240,9 @@ div#dicom-dump-container {
     .content pre {
         background-color: #4a4a4a;
         color: white;
+    }
+    .content code {
+        background-color: unset;
+        color: inherit;
     }
 }
