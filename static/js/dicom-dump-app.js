@@ -47,9 +47,13 @@ async function handleFiles() {
     let file = this.files[0];
 
     let fileData = await file.arrayBuffer();
-    let dump = dicom_dump.dump_to_json(new Uint8Array(fileData));
+    try {
+        let dump = dicom_dump.dump_to_json(new Uint8Array(fileData));
 
-    updateTableWith(dump);
+        updateTableWith(dump);
+    } catch (e) {
+        console.error(`Failed to open ${this.value} as a DICOM file:`, e);
+    }
 }
 
 /**
