@@ -37,7 +37,7 @@ from the [various crates] in the DICOM-rs umbrella.
 
 [various crates]: https://github.com/Enet4/dicom-rs#library
 
-<script src="js/in-viewport.js"></script>
+<script defer src="js/in-viewport.js"></script>
 <div class="crates">
 
 - dicom-object
@@ -77,7 +77,7 @@ using [WebAssembly](https://webassembly.org).
 <div id="dicom-dump-container">
     DICOM dump app not loaded
 </div>
-<script type="module" src="./js/dicom-dump-app.js"></script>
+<script defer type="module" src="./js/dicom-dump-app.js"></script>
 
 See also a [simple DICOM viewer](https://enet4.github.io/simple-dicom-viewer/)
 made with DICOM-rs.
