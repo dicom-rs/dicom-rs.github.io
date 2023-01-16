@@ -14,17 +14,16 @@ h1.hero.headingtext {
     height: 60vh;
 
 /* 
-https://www.joshwcomeau.com/gradient-generator?colors=7a6cfc|dac3fa|dea584&angle=140&colorMode=hcl&precision=5&easingCurve=0.6368092504040949|1.0031294987119477|0.7187058021282328|0.00838457304855873
+https://www.joshwcomeau.com/gradient-generator?colors=73a6fe|dea584&angle=175&colorMode=hcl&precision=5&easingCurve=0.6368092504040949|1.0031294987119477|0.7187058021282328|0.00838457304855873
 */
     background-image: linear-gradient(
-        140deg,
-        hsl(246deg, 96%, 71%) 1%,
-        hsl(253deg, 94%, 75%) 37%,
-        hsl(258deg, 91%, 80%) 50%,
-        hsl(263deg, 87%, 85%) 60%,
-        hsl(294deg, 55%, 83%) 67%,
-        hsl(337deg, 78%, 82%) 75%,
-        hsl(2deg, 74%, 79%) 83%,
+        175deg,
+        hsl(218deg, 99%, 72%) 1%,
+        hsl(254deg, 72%, 77%) 40%,
+        hsl(297deg, 46%, 71%) 54%,
+        hsl(330deg, 66%, 74%) 64%,
+        hsl(350deg, 74%, 76%) 72%,
+        hsl(8deg, 69%, 74%) 81%,
         hsl(22deg, 58%, 69%) 100%
     );
 
