@@ -239,6 +239,10 @@ div#dicom-dump-container {
     }
 }
 
+.content pre {
+    border: #989898 1px solid;
+}
+
 @media (prefers-color-scheme: dark) {
     .content pre {
         background-color: #4a4a4a;
