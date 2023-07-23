@@ -42,6 +42,7 @@ from the [various crates] in the DICOM-rs umbrella.
 
 - dicom-object
 - dicom-dump
+- dicom-json
 - dicom-pixeldata
 - dicom-ul
 - dicom-dictionary-std
