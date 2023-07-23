@@ -33,7 +33,7 @@ jobs:
     #- name: Build embedded DICOM dump webapp
     #  run: cd rust/dicom-dump-js && ./build-wasm-release.sh
     - name: deploy Zola site
-      uses: shalzz/zola-deploy-action@v0.16.1
+      uses: shalzz/zola-deploy-action@v0.17.2
       env:
         PAGES_BRANCH: gh-pages
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
