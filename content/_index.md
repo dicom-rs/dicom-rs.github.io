@@ -55,7 +55,7 @@ from the [various crates] in the DICOM-rs umbrella.
 
 ### Example
 
-Fetch a DICOM file and read its contents as a dictionary of elements.
+Fetch a DICOM file and read its contents as a dictionary of data set elements.
 
 ```rust
 use dicom::object::open_file;
@@ -80,8 +80,10 @@ using [WebAssembly](https://webassembly.org).
 </div>
 <script defer type="module" src="./js/dicom-dump-app.js"></script>
 
-See also a [simple DICOM viewer](https://enet4.github.io/simple-dicom-viewer/)
+See also a [simple proof-of-concept DICOM viewer][viewer]
 made with DICOM-rs.
+
+[viewer]: https://enet4.github.io/simple-dicom-viewer/
 
 ## Tools
 
@@ -91,6 +93,7 @@ for various operational needs.
 - `dicom-dump` to inspect the contents of DICOM files;
 - `dicom-toimage` to turn DICOM files into general image files;
 - `dicom-storescu` to send DICOM files to a DICOM device;
+- `dicom-findscu` to query a DICOM device;
 - [and more]!
 
 These tools are standalone and can be downloaded [here][releases].
