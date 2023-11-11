@@ -1,6 +1,6 @@
-const dicom_dump = await import("../wasm/dicom-dump.js");
+import wasm_init, { dump_to_json } from "../wasm/dicom-dump.js";
 console.debug("loading dicom_dump app...");
-await dicom_dump.default();
+await wasm_init();
 console.debug("dicom_dump_js loaded!");
 const container = document.getElementById('dicom-dump-container');
 
@@ -51,7 +51,7 @@ async function handleFiles() {
 
     let fileData = await file.arrayBuffer();
     try {
-        let dump = dicom_dump.dump_to_json(new Uint8Array(fileData));
+        let dump = dump_to_json(new Uint8Array(fileData));
 
         updateTableWith(dump);
     } catch (e) {
