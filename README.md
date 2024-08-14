@@ -9,7 +9,7 @@ To serve locally:
 zola serve
 ```
 
-Last tested using zola 0.16.1.
+Last tested using zola 0.19.1.
 
 To build the sample web application,
 see [`rust/dicom-dump-js`](rust/dicom-dump-js).
