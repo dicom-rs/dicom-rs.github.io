@@ -43,11 +43,14 @@
 .z-storage {
  color: #b48ead;
 }
+.z-storage.z-type.z-rust {
+ font-weight: bold;
+}
 .z-support.z-function {
- color: #96b5b4;
+ color: #1d7db9;
 }
 .z-string, .z-constant.z-other.z-symbol, .z-entity.z-other.z-inherited-class {
- color: #a3be8c;
+ color: #929643;
 }
 .z-constant.z-numeric {
  color: #d08770;
@@ -81,6 +84,9 @@
 }
 .z-keyword.z-other.z-unit {
  color: #d08770;
+}
+.z-keyword.z-other.z-rust {
+ font-weight: bold;
 }
 .z-markup.z-bold, .z-punctuation.z-definition.z-bold {
  color: #d08770;
