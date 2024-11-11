@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link rel="icon" type="image/png" href="/favicon.ico">
+    
+    <style>
+    :root {
+        /* Primary theme color */
+        --primary-color: #5EA4DF;
+        /* Primary theme text color */
+        --primary-text-color: #334050;
+        /* Primary theme link color */
+        --primary-link-color: #7f6aFD;
+        /* Secondary color: the background body color */
+        --secondary-color: #faf7fd;
+        --secondary-text-color: #2c2c2c;
+        /* Highlight text color of table of content */
+        --toc-highlight-text-color: #b04ebf;
+
+        --color-bgk-1: #b0b4b8;
+        --color-bgk-2: #e4e4e7;
+        --code-background-color: #fefefe;
+
+        --color-1: rgb(51, 64, 80);
+
+        --header-font-family: "Fira Sans", sans-serif;
+        --text-font-family: "Fira Sans", sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --secondary-color: #2c2c2c;
+            --secondary-text-color: #fcfaf6;
+            --primary-text-color: #efefef;
+
+            --toc-highlight-text-color: #dc7ff6;
+
+            --color-bgk-1: rgb(51, 64, 80);
+            --color-bgk-2: #4f4f58;
+            --color-bgk-code: #4a4a4a;
+    
+            --color-1: #989898;
+
+            --header-font-family: "Fira Sans", sans-serif;
+            --text-font-family: "Fira Sans", sans-serif;
+        }
+    }
+</style>
+
+    
+    <link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="https://dicom-rs.github.io/juice.css">
+    
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    
+
+    <header class="pos-absolute" style="background-color: transparent">
+        
+
+<a href="https:&#x2F;&#x2F;dicom-rs.github.io&#x2F;">
+    <div class="logo">
+        <img src="https://dicom-rs.github.io/./dicom-rs-logo.svg" alt="logo">
+        DICOM-rs
+    </div>
+</a>
+
+<nav>
+    
+    
+        
+        <a class="nav-item subtitle-text" href="https:&#x2F;&#x2F;github.com&#x2F;Enet4&#x2F;dicom-rs">Github</a>
+        
+    
+</nav>
+
+    </header>
+
+    <div class="hero">
+        
+<script async defer src="https://buttons.github.io/buttons.js"></script>
+<section class="text-center" style="display: flex;">
+    <div style="width: 100%">
+        <div style="position: absolute; left: 16px; top: 16px; width: 160px;">
+            <img src="dicom-rs-logo.svg" style="width: 100%; opacity: 40%;"></img>
+        </div>
+        <h1 class="heading-text" style="font-size: 50px">
+            Enter DICOM-rs
+        </h1>
+        <h3 class="title-text">
+            A DICOM implementation for the next generation of medical imaging systems.
+        </h3>
+        <div>
+            <a class="github-button" href="https:&#x2F;&#x2F;github.com&#x2F;Enet4&#x2F;dicom-rs" data-size="large" data-show-count="true"
+            aria-label="Star dicom-rs on GitHub">Star</a>
+            <a class="github-button" href="https:&#x2F;&#x2F;github.com&#x2F;Enet4&#x2F;dicom-rs/fork" data-size="large"
+            data-show-count="true" aria-label="Fork dicom-rs on GitHub">Fork</a>
+
+        </div>
+    </div>
+</section>
+
+<div class="explore-more text"
+    onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+    Find out more ⇩
+</div>
+<style>
+    .hero section {
+        padding: 0 4rem;
+    }
+    @media screen and (max-width: 768px) {
+        .hero section {
+            padding: 0 2rem;
+        }
+
+        .hero-image {
+            display: none
+        }
+    }
+</style>
+
+    </div>
+
+    
+
+    <main>
+        
+        
+        
+        
+        
+        <div class="toc">
+            <div class="toc-sticky">
+                
+                <div class="toc-item">
+                    <a class="subtext" href="https://dicom-rs.github.io/#overview">Overview</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="https://dicom-rs.github.io/#using-as-a-library">Using as a library</a>
+                </div>
+                
+                
+                <div class="toc-item-child">
+                    <a class="subtext" href="https://dicom-rs.github.io/#example"><small>- Example</small></a>
+                </div>
+                
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="https://dicom-rs.github.io/#bring-it-to-the-web">Bring it to the Web</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="https://dicom-rs.github.io/#tools">Tools</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="https://dicom-rs.github.io/#free-and-open">Free and open</a>
+                </div>
+                
+                
+                <div class="toc-item">
+                    <a class="subtext" href="https://dicom-rs.github.io/#community">Community</a>
+                </div>
+                
+                
+            </div>
+        </div>
+        
+        
+
+        <div class="content text">
+            
+<h2 id="overview">Overview</h2>
+<p><strong>DICOM-rs</strong> is an ecosystem of libraries and tools
+for working with DICOM systems.</p>
+<div class="keypoints">
+<ul>
+<li>Work with DICOM meta-data and pixel data with ease.</li>
+<li>Communicate with existing DICOM systems.</li>
+<li>Built in the <a href="https://rust-lang.org">Rust programming language</a> for performance and reliability.</li>
+<li>Portable and prepared for all modern environments.</li>
+<li>Free to use and extend, for life.</li>
+</ul>
+</div>
+<h2 id="using-as-a-library">Using as a library</h2>
+<p>Get started quickly by adding the <a href="https://crates.io/crates/dicom"><code>dicom</code></a> crate to your Rust project.</p>
+<pre data-lang="toml" class="language-toml z-code"><code class="language-toml" data-lang="toml"><span class="z-source z-toml"><span class="z-punctuation z-definition z-table z-begin z-toml">[</span><span class="z-meta z-tag z-table z-toml"><span class="z-entity z-name z-table z-toml">dependencies</span></span><span class="z-punctuation z-definition z-table z-end z-toml">]</span>
+<span class="z-meta z-tag z-key z-toml"><span class="z-entity z-name z-tag z-toml">dicom</span></span> <span class="z-punctuation z-definition z-key-value z-toml">=</span> <span class="z-string z-quoted z-double z-basic z-toml"><span class="z-punctuation z-definition z-string z-begin z-toml">&quot;</span>0.8<span class="z-punctuation z-definition z-string z-end z-toml">&quot;</span></span>
+</span></code></pre>
+<p>Or pick exactly what you need
+from the <a href="https://github.com/Enet4/dicom-rs#library">various crates</a> in the DICOM-rs umbrella.</p>
+<script defer src="js/in-viewport.js"></script>
+<div class="crates">
+<ul>
+<li>dicom-object</li>
+<li>dicom-dump</li>
+<li>dicom-json</li>
+<li>dicom-pixeldata</li>
+<li>dicom-ul</li>
+<li>dicom-dictionary-std</li>
+<li>dicom-transfer-syntax-registry</li>
+<li>dicom-parser</li>
+<li>dicom-encoding</li>
+<li>dicom-core</li>
+</ul>
+</div>
+<h3 id="example">Example</h3>
+<p>Fetch a DICOM file and read its contents as a dictionary of data set elements.</p>
+<pre data-lang="rust" class="language-rust z-code"><code class="language-rust" data-lang="rust"><span class="z-source z-rust"><span class="z-keyword z-other z-rust">use</span> <span class="z-meta z-path z-rust">dicom<span class="z-punctuation z-accessor z-rust">::</span></span><span class="z-meta z-path z-rust">object<span class="z-punctuation z-accessor z-rust">::</span></span>open_file<span class="z-punctuation z-terminator z-rust">;</span>
+<span class="z-keyword z-other z-rust">use</span> <span class="z-meta z-path z-rust">dicom<span class="z-punctuation z-accessor z-rust">::</span></span><span class="z-meta z-path z-rust">dictionary_std<span class="z-punctuation z-accessor z-rust">::</span></span>tags<span class="z-punctuation z-terminator z-rust">;</span>
+
+<span class="z-storage z-type z-rust">let</span> obj <span class="z-keyword z-operator z-assignment z-rust">=</span> <span class="z-support z-function z-rust">open_file</span><span class="z-meta z-group z-rust"><span class="z-punctuation z-section z-group z-begin z-rust">(</span><span class="z-string z-quoted z-double z-rust"><span class="z-punctuation z-definition z-string z-begin z-rust">&quot;</span>path/to/IMAGES/0001.dcm<span class="z-punctuation z-definition z-string z-end z-rust">&quot;</span></span></span><span class="z-meta z-group z-rust"><span class="z-punctuation z-section z-group z-end z-rust">)</span></span><span class="z-keyword z-operator z-rust">?</span><span class="z-punctuation z-terminator z-rust">;</span>
+<span class="z-storage z-type z-rust">let</span> patient_name <span class="z-keyword z-operator z-assignment z-rust">=</span> obj<span class="z-punctuation z-accessor z-dot z-rust">.</span><span class="z-support z-function z-rust">element</span><span class="z-meta z-group z-rust"><span class="z-punctuation z-section z-group z-begin z-rust">(</span><span class="z-meta z-path z-rust">tags<span class="z-punctuation z-accessor z-rust">::</span></span><span class="z-constant z-other z-rust">PATIENT_NAME</span></span><span class="z-meta z-group z-rust"><span class="z-punctuation z-section z-group z-end z-rust">)</span></span><span class="z-keyword z-operator z-rust">?</span>
+    <span class="z-punctuation z-accessor z-dot z-rust">.</span><span class="z-support z-function z-rust">to_patient_name</span><span class="z-meta z-group z-rust"><span class="z-punctuation z-section z-group z-begin z-rust">(</span></span><span class="z-meta z-group z-rust"><span class="z-punctuation z-section z-group z-end z-rust">)</span></span><span class="z-keyword z-operator z-rust">?</span><span class="z-punctuation z-terminator z-rust">;</span>
+<span class="z-storage z-type z-rust">let</span> modality <span class="z-keyword z-operator z-assignment z-rust">=</span> obj<span class="z-punctuation z-accessor z-dot z-rust">.</span><span class="z-support z-function z-rust">element</span><span class="z-meta z-group z-rust"><span class="z-punctuation z-section z-group z-begin z-rust">(</span><span class="z-meta z-path z-rust">tags<span class="z-punctuation z-accessor z-rust">::</span></span><span class="z-constant z-other z-rust">MODALITY</span></span><span class="z-meta z-group z-rust"><span class="z-punctuation z-section z-group z-end z-rust">)</span></span><span class="z-keyword z-operator z-rust">?</span>
+    <span class="z-punctuation z-accessor z-dot z-rust">.</span><span class="z-support z-function z-rust">to_str</span><span class="z-meta z-group z-rust"><span class="z-punctuation z-section z-group z-begin z-rust">(</span></span><span class="z-meta z-group z-rust"><span class="z-punctuation z-section z-group z-end z-rust">)</span></span><span class="z-keyword z-operator z-rust">?</span><span class="z-punctuation z-terminator z-rust">;</span>
+
+<span class="z-support z-macro z-rust">println!</span><span class="z-meta z-group z-rust"><span class="z-punctuation z-section z-group z-begin z-rust">(</span></span><span class="z-meta z-group z-rust"><span class="z-string z-quoted z-double z-rust"><span class="z-punctuation z-definition z-string z-begin z-rust">&quot;</span><span class="z-constant z-other z-placeholder z-rust">{}</span> case of patient <span class="z-constant z-other z-placeholder z-rust">{}</span><span class="z-punctuation z-definition z-string z-end z-rust">&quot;</span></span></span><span class="z-meta z-group z-rust"><span class="z-punctuation z-separator z-rust">,</span> modality<span class="z-punctuation z-separator z-rust">,</span> patient_name<span class="z-punctuation z-section z-group z-end z-rust">)</span></span><span class="z-punctuation z-terminator z-rust">;</span>
+</span></code></pre>
+<h2 id="bring-it-to-the-web">Bring it to the Web</h2>
+<p>Rich DICOM applications can be delivered to the browser
+using <a href="https://webassembly.org">WebAssembly</a>.</p>
+<div id="dicom-dump-container">
+    DICOM dump app not loaded
+</div>
+<script defer type="module" src="./js/dicom-dump-app.js"></script>
+<p>See also a <a href="https://enet4.github.io/simple-dicom-viewer/">simple proof-of-concept DICOM viewer</a>
+made with DICOM-rs.</p>
+<h2 id="tools">Tools</h2>
+<p>DICOM-rs gives you cross-compatible command line tools
+for various operational needs.</p>
+<ul>
+<li><code>dicom-dump</code> to inspect the contents of DICOM files;</li>
+<li><code>dicom-toimage</code> to turn DICOM files into general image files;</li>
+<li><code>dicom-storescu</code> to send DICOM files to a DICOM device;</li>
+<li><code>dicom-findscu</code> to query a DICOM device;</li>
+<li><a href="https://github.com/Enet4/dicom-rs#tools">and more</a>!</li>
+</ul>
+<p>These tools are standalone and can be downloaded <a href="https://github.com/Enet4/dicom-rs/releases">here</a>.
+Windows and linux binaries are available.</p>
+<h2 id="free-and-open">Free and open</h2>
+<p>DICOM-rs embraces the open source software model
+with a permissive license
+(dual license Apache 2.0 OR MIT),
+enabling its use in academia and professional software.</p>
+<h2 id="community">Community</h2>
+<ul>
+<li>See the official <a href="https://github.com/Enet4/dicom-rs">GitHub repository</a>
+to follow the development process,
+report issues,
+and open <a href="https://github.com/Enet4/dicom-rs/discussions">discussion</a>.</li>
+<li>For real time chatting about DICOM-rs,
+see the <a href="https://dicom-rs.zulipchat.com">DICOM-rs Zulip</a>.</li>
+<li>All interactions must abide to the community <a href="https://github.com/Enet4/dicom-rs/blob/master/CODE_OF_CONDUCT.md">Code of Conduct</a>.</li>
+</ul>
+
+
+        </div>
+
+        
+        
+    </main>
+
+    
+<footer>
+    <small class="subtext">
+        2023 <a href="https:&#x2F;&#x2F;github.com&#x2F;Enet4&#x2F;dicom-rs">DICOM-rs project</a>
+        <p>
+            Published with <a href="https://pages.github.com">GitHub Pages</a>
+        </p>
+    </small>
+</footer>
+
+</body>
+<script>
+    const scrollHandler = entries => {
+        // Find the first entry which intersecting and ratio > 0.9 to highlight.
+        let entry = entries.find(entry => {
+            return entry.isIntersecting && entry.intersectionRatio > 0.9;
+        });
+        if (!entry) return;
+
+        document.querySelectorAll(".toc a").forEach((item) => {
+            item.classList.remove("active");
+        });
+
+        // let url = new URL(`#${entry.target.id}`);
+        let link = document.querySelector(`.toc a[href$="${decodeURIComponent(`#${entry.target.id}`)}"]`)
+        if (link) {
+            link.classList.add("active");
+            link.scrollIntoView({ behavior: "auto", block: "nearest" });
+        }
+    };
+    // Set -100px root margin to improve highlight experience.
+    const observer = new IntersectionObserver(scrollHandler, { threshold: 1 });
+    let items = document.querySelectorAll('h1,h2,h3,h4,h5,h6');
+    items.forEach(item => observer.observe(item));
+</script>
+
+</html>
