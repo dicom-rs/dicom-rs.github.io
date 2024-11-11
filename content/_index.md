@@ -29,7 +29,7 @@ Get started quickly by adding the [`dicom`] crate to your Rust project.
 
 ```toml
 [dependencies]
-dicom = "0.7"
+dicom = "0.8"
 ```
 
 Or pick exactly what you need
