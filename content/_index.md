@@ -29,7 +29,7 @@ Get started quickly by adding the [`dicom`] crate to your Rust project.
 
 ```toml
 [dependencies]
-dicom = "0.8"
+dicom = "0.9"
 ```
 
 Or pick exactly what you need
@@ -96,8 +96,8 @@ for various operational needs.
 - `dicom-findscu` to query a DICOM device;
 - [and more]!
 
-These tools are standalone and can be downloaded [here][releases].
-Windows and linux binaries are available.
+These tools are standalone and can be downloaded in the [release page][releases].
+Windows and Linux binaries are available.
 
 [and more]: https://github.com/Enet4/dicom-rs#tools
 [releases]: https://github.com/Enet4/dicom-rs/releases
