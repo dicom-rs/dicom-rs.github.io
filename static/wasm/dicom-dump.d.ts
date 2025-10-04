@@ -1,14 +1,10 @@
 /* tslint:disable */
 /* eslint-disable */
-/**
-* @param {Uint8Array} raw_dicom_data
-* @returns {any}
-*/
 export function dump_to_json(raw_dicom_data: Uint8Array): any;
-/**
-*/
 export class El {
+  private constructor();
   free(): void;
+  [Symbol.dispose](): void;
 }
 
 export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembly.Module;
@@ -16,10 +12,12 @@ export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembl
 export interface InitOutput {
   readonly memory: WebAssembly.Memory;
   readonly __wbg_el_free: (a: number, b: number) => void;
-  readonly dump_to_json: (a: number, b: number, c: number) => void;
-  readonly __wbindgen_add_to_stack_pointer: (a: number) => number;
+  readonly dump_to_json: (a: number, b: number) => [number, number, number];
   readonly __wbindgen_malloc: (a: number, b: number) => number;
   readonly __wbindgen_realloc: (a: number, b: number, c: number, d: number) => number;
+  readonly __wbindgen_export_2: WebAssembly.Table;
+  readonly __externref_table_dealloc: (a: number) => void;
+  readonly __wbindgen_start: () => void;
 }
 
 export type SyncInitInput = BufferSource | WebAssembly.Module;

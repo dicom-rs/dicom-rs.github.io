@@ -10,7 +10,7 @@ and the `wasm-bindgen` CLI tool.
 
 ```sh
 rustup target add wasm32-unknown-unknown
-cargo install wasm-bindgen-cli
+cargo install wasm-bindgen-cli --version =0.2.104
 ```
 
 Then, run `build-wasm-release.sh`.

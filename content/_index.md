@@ -40,16 +40,16 @@ from the [various crates] in the DICOM-rs umbrella.
 <script defer src="js/in-viewport.js"></script>
 <div class="crates">
 
-- dicom-object
-- dicom-dump
-- dicom-json
-- dicom-pixeldata
-- dicom-ul
-- dicom-dictionary-std
-- dicom-transfer-syntax-registry
-- dicom-parser
-- dicom-encoding
-- dicom-core
+- [dicom-object](https://crates.io/crates/dicom-object)
+- [dicom-dump](https://crates.io/crates/dicom-dump)
+- [dicom-json](https://crates.io/crates/dicom-json)
+- [dicom-pixeldata](https://crates.io/crates/dicom-pixeldata)
+- [dicom-ul](https://crates.io/crates/dicom-ul)
+- [dicom-dictionary-std](https://crates.io/crates/dicom-dictionary-std)
+- [dicom-transfer-syntax-registry](https://crates.io/crates/dicom-transfer-syntax-registry)
+- [dicom-parser](https://crates.io/crates/dicom-parser)
+- [dicom-encoding](https://crates.io/crates/dicom-encoding)
+- [dicom-core](https://crates.io/crates/dicom-core)
 
 </div>
 
@@ -90,10 +90,16 @@ made with DICOM-rs.
 DICOM-rs gives you cross-compatible command line tools
 for various operational needs.
 
-- `dicom-dump` to inspect the contents of DICOM files;
-- `dicom-toimage` to turn DICOM files into general image files;
-- `dicom-storescu` to send DICOM files to a DICOM device;
-- `dicom-findscu` to query a DICOM device;
+- [`dicom-dump`](https://crates.io/crates/dicom-dump)
+  to inspect the contents of DICOM files;
+- [`dicom-toimage`](https://crates.io/crates/dicom-toimage)
+  to turn DICOM files into general image files;
+- [`dicom-transcode` from dicom-pixeldata](https://crates.io/crates/dicom-pixeldata)
+  to query a DICOM device;
+- [`dicom-storescu`](https://crates.io/crates/dicom-storescu)
+  to send DICOM files to a DICOM device;
+- [`dicom-findscu`](https://crates.io/crates/dicom-findscu)
+  to query a DICOM device;
 - [and more]!
 
 These tools are standalone and can be downloaded in the [release page][releases].

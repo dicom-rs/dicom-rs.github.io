@@ -105,6 +105,11 @@ div.crates {
         transform: translate(-4px, -4px);
         box-shadow:  rgba(0.8, 0.8, 0.8, 0.25) 3px 3px 4px;
     }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 div.crates.inviewport {
     visibility: visible;
